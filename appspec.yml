@@ -12,9 +12,7 @@ files:
  - source: /supervisord.conf
    destination: /home/ec2-user
  - source: /requirements.txt
-   destination: /home/ec2-user
-- source: /scripts/
-   destination: /home/ec2-user/scripts
+   destination: /home/ec2-user/
 
 permissions:
   - object: /home/ec2-user/manage.py
@@ -27,11 +25,3 @@ permissions:
     mode: 644
     type:
       - file
-hooks:
-  AfterInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
-    - location: scripts/codestar_remote_access
-      timeout: 300
-      runas: root
