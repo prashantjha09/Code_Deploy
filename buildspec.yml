@@ -17,8 +17,9 @@ artifacts:
     - 'user'
     - 'website/**/*'
     - 'myapp/**/*'
+    - 'scripts/**/*'
     - 'appspec.yml'
     - 'manage.py'
     - 'requirements.txt'
     - 'supervisord.conf'
-    - 'scripts/**/*'
+
