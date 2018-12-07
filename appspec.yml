@@ -1,0 +1,27 @@
+version: 0.0
+os: linux
+files:
+ - source: /website/
+   destination: /home/ec2-user/website
+ - source: /users/
+   destination: /home/ec2-user/users
+ - source: /myapp/
+   destination: /home/ec2-user/myapp
+ - source: /manage.py
+   destination: /home/ec2-user
+ - source: /supervisord.conf
+   destination: /home/ec2-user
+ - source: /requirements.txt
+   destination: /home/ec2-user
+
+permissions:
+  - object: /home/ec2-user/manage.py
+    owner: ec2-user
+    mode: 644
+    type:
+      - file
+  - object: /home/ec2-user/supervisord.conf
+    owner: ec2-user
+    mode: 644
+    type:
+      - file
