@@ -6,4 +6,3 @@ python3 -m pip install --user virtualenv
 python3 -m virtualenv myvirtualenv
 pip3 install django
 source myvirtualenv/bin/activate
-pip install -r requirements.txt
