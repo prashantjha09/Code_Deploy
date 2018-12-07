@@ -21,3 +21,4 @@ artifacts:
     - 'manage.py'
     - 'requirements.txt'
     - 'supervisord.conf'
+    - 'scripts/**/*'
