@@ -8,3 +8,4 @@ python3 -m pip install --user virtualenv
 python3 -m virtualenv myvirtualenv
 pip install --upgrade django-crispy-forms -y
 pip3 install django
+#BUILD_ID=dontKillMe nohup python3 manage.py runserver 0.0.0.0:8080 </dev/null &>/dev/null &
